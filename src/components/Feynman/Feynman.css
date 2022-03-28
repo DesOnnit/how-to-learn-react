@@ -1,0 +1,124 @@
+.feynman {
+    position: relative;
+    min-height: 790px;
+    padding-top: 50px;
+    background-color: #f2f2f2;
+    background-image: url(../../utils/images/feynman.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 867px 637px;
+}
+
+.feynman__title {
+    max-width: 648px;
+    text-align: center;
+    line-height: 1.15;
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0 auto 70px;
+}
+
+.feynman__subtitle {
+    margin: 0;
+    line-height: 51px;
+    font-size: 30px;
+    font-weight: normal;
+    align-self: start;
+}
+
+.feynman__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.feynman__link {
+    position: absolute;
+    right: 0;
+    line-height: 51px;
+    font-size: 36px;
+    font-weight: normal;
+    color: #2f80ed;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.feynman__link:hover {
+    opacity: 0.4;
+}
+
+@media screen and (min-width:1024px) and (max-width:1279px) {
+    .feynman__title {
+        font-size: 90px;
+        line-height: 1.1;
+    }
+
+    .feynman__subtitle {
+        line-height: 40px;
+        font-size: 26px;
+    }
+
+    .feynman {
+        background-size: 800px 600px;
+    }
+
+    .feynman__link {
+        line-height: 40px;
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width:1024px) {
+    .feynman__title {
+        font-size: 68px;
+        line-height: 1.1;
+        margin-bottom: 40px;
+    }
+
+    .feynman__info {
+        flex-direction: column;
+    }
+
+    .feynman {
+        background-size: 700px 550px;
+    }
+
+    .feynman__link {
+        position: relative;
+        line-height: 44px;
+        font-size: 28px;
+    }
+
+    .feynman__subtitle {
+        align-self: center;
+        line-height: 44px;
+        font-size: 28px;
+    }
+
+}
+@media screen and (min-width: 320px) and (max-width:767px) {
+    .feynman {
+        background-size: 500px 400px;
+        min-height: 650px;
+    }
+    .feynman__title {
+        font-size: 52px;
+        line-height: 1.1;
+        margin-bottom: 20px;
+    }
+    .feynman__info {
+        flex-direction: column;
+    }
+    .feynman__link {
+        position: relative;
+        line-height: 36px;
+        font-size: 22px;
+    }
+
+    .feynman__subtitle {
+        align-self: center;
+        line-height: 36px;
+        font-size: 22px;
+    }
+}

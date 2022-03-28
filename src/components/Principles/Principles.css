@@ -1,0 +1,28 @@
+.principles {
+    padding: 100px 0;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.principles__figure {
+    background: url(../../utils/images/kaufman-triangle.svg);
+    background-size: cover;
+    width: 877px;
+    height: 877px;
+    position: absolute;
+    top: 0;
+    right: -210px;
+    z-index: 1;
+    animation: rotate 5s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg)
+    }
+}
